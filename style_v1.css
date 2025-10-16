@@ -1,0 +1,150 @@
+/* CSS files add styling to your content */
+
+body {
+	margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1300px 150px;
+    grid-template-rows: 180px 30px 1840px 50px;
+	height: 100vh;
+}
+
+.header {
+	box-sizing: border-box;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	background-size: cover;
+	width: 100%;
+	background-color:#FF474C;
+	color:#000000;
+}
+/* styling my navigation/menu */
+.nav{
+	background-color: #008000;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+	position: relative;
+}
+
+.nav ul{   /* styling text in nav*/
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+	font-size: 18px;
+    font-weight: 600;
+    font-style: normal;	
+} 
+
+.nav li {
+	float: left;
+	padding-top:5px;
+	padding-left: 25px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+} 
+
+.nav li a{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-decoration: none ;
+} 
+
+/* Hover Colours*/
+.nav a:link{color: #808080} /* unvisited link */
+.nav a:visited{color: #808080} /* visited link */
+.nav a:hover{color: #000000} /* mouse over link */
+.nav a:active{color: #808080} /* selected link */
+
+ul li ul {
+	padding: 0px;
+	position: relative;
+	top: 4px; /* space between each drop-down menu list */
+	left: 0;
+	width: 250px; /* width of drop-down menu list */
+	height: 100px;
+	display: none;
+	visibility: hidden ; /* this hides the drop-down menu list */
+	z-index: 1; /* for overlapping divs, bringing to the front like  a drop-down menu */
+}
+	
+ul li ul li {
+	background:#FFFFFF; /* this is the drop-down menu background colour */
+	display: block;
+    font-weight: 600;
+    font-style: normal;
+	color: #000000;
+	text-decoration: none ;	
+}
+
+ul li ul li:hover { background: #808080;} /* this is the drop-down menu hover on blocks */
+
+ul li:hover ul {
+	display: block;
+	position: relative;
+	visibility: visible; /* this makes the drop-down menu visible */
+	height: 50px; /* height of drop-down menu */
+
+}
+/* style for navigation ends here */
+
+.content {
+	box-sizing: border-box;
+	background-color: #FFFF00;
+	position: relative;
+	grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.transbox {
+  width: 850px;
+  height: 400px;
+  background-color: #FF474C;
+  float:left;
+  margin-left: 250px;
+  margin-top: 25px;
+  margin-bottom: 25px;	
+}
+
+.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  text-align: justify;
+}
+
+h1 { 
+  font-weight: bold;
+  color: #000000;
+  font-size: 30px;
+  text-align: justify;
+  padding-left: 250px;
+}
+
+.transbox2 {
+  width: 732px;
+  height: 592px;
+  background-color: #FF474C;
+  float:right; 
+}
+
+.transbox2 p {
+  margin: 10px;
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px ;
+  text-align: justify;
+}
+	
+.footer {
+	grid-column-end: span 2;
+	background-color: #00FF00;
+	padding-left: 20px;
+	font-size: 17px;
+	color:  #000000;
+}
