@@ -1,0 +1,332 @@
+/* CSS files add styling to your content */
+
+/* Import my google Fonts Third  part plug-in here. */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sigmar&display=swap');
+
+body {
+	margin: 0;
+}
+
+:root {     /* my variable colors */
+	--black: #000000;
+	--white: #FFFFFF;
+	--blue: #1D3970;
+	--yellow:#F5B519;
+	--red:  #8D2225;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1200px 150px;
+    grid-template-rows: 180px 30px 1840px 50px;
+	height: 100vh;
+}
+
+.header {
+	box-sizing: border-box;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	background-size: cover;
+	background-color: var(--blue); /* calling up my variable colors */	
+}
+
+
+/* styling my navigation/menu */
+.nav{
+	background-color: var(--blue);/* calling up my variable colors */
+    grid-column-start: 1;
+    grid-column-end: span 2;
+	position: relative;
+}
+
+/* styling text in nav*/
+.nav ul{   
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+	font-size: 18px;
+	font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+	text-decoration: none;
+} 
+
+.nav li {
+	float: right;
+	padding-top:5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+} 
+
+.nav li a{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-decoration: none ;
+} 
+
+.nav li a:hover { background: var(--yellow);} /* this is the drop-down menu hover on blocks */
+/* Hover Colours*/
+.nav a:link{color: var(--white)} /* unvisited link */
+.nav a:visited{color: var(--white)} /* visited link */
+.nav a:hover{color: var(--white)} /* mouse over link */
+.nav a:active{color: var(--white)} /* selected link */
+
+ul li ul {
+	padding: 0px;
+	position: relative;
+	top: 3px ; /* space between each drop-down menu list */
+	left: 0;
+	width: 205px; /* width of drop-down menu list */
+	height: 50px;
+	display: none;
+	visibility: hidden ; /* this hides the drop-down menu list */
+	z-index: 5; /* for overlapping divs, bringing to the front like  a drop-down menu */
+}
+	
+ul li ul li {
+	background: var(--blue); /* this is the drop-down menu background colour */
+	display: block;
+	font-family: "Montserrat";
+    font-weight: 400px;
+	left: 0;
+    font-style: normal;
+	color: var(--white);
+	text-decoration: none ;
+	text-align: center;
+}
+
+ul li ul li:hover { background: var(--yellow); } /* this is the drop-down menu hover on blocks */
+
+ul li:hover ul {
+	display: block;
+	visibility: visible; /* this makes the drop-down menu visible */
+	height:100px;
+}
+/* style for navigation ends here */
+
+.content {
+	box-sizing: border-box;
+	background-color: var(--white);/* calling up my variable colors */
+	position: relative;
+	grid-column-start: 1;
+    grid-column-end: span 2;
+	
+}
+
+h1 {
+   	font-weight: bold;
+    color: var(--white);/* calling up my variable colors */
+	text-align: center;
+    font-family: "Montserrat";
+	font-size: 35px ;
+	padding:10px;	
+}
+
+h2 {
+   	font-weight: bold;
+    color: var(--white);/* calling up my variable colors */
+	margin: 10px;
+    font-family: "Montserrat";
+	font-size: 35px ;
+	text-align: center;
+}
+
+.textarea {
+  	position: relative;
+  	text-align: center;
+  	color: var(--blue); /* calling up my variable colors */
+  	font-size: 22px;
+   	font-family: "Montserrat";
+}
+
+.text { /* Centering the text*/
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.banner {
+  	width: 1350px;
+  	height: 105px;
+  	background-color: var(--blue);/* calling up my variable colors */
+	margin-top:-70px; /* closes the white space */	
+}
+
+.banner p {
+	border-radius: 10px;
+	padding-top:33px;
+  	margin: 5%;
+  	font-weight: bold;
+  	color: var(--white); /* calling up my variable colors */
+  	font-family: "Montserrat";
+	font-size: 30px ;
+	text-align: center;
+}
+
+/* styling text and box for home page  */
+.textbox {
+  	width: 675px;
+  	height: 676px;
+  	background-color: var(--red); /* calling up my variable colors */
+  	float:right;
+	overflow: hidden;
+}
+
+.textbox p {
+  	margin: 15px;
+	margin-top: -20px;
+  	color: var(--white); /* calling up my variable colors */
+  	font-family: "Montserrat";
+	font-size: 16.4px ;
+	text-align: centre;
+}
+/* end of styling text and box for home page  */
+
+/* styling text and box for community service page  */
+.textbox2 {
+  	width: 675px;
+  	height: 345px;	
+  	background-color: var(--red); /* calling up my variable colors */
+  	float: right;
+}
+
+.textbox2 p {
+  	margin-left: 20px;
+	margin-right: 20px;
+	margin-top:-20px;
+  	color: var(--white); /* calling up my variable colors */
+  	font-family: "Montserrat";
+	font-size: 18px ;
+	text-align: centre;
+}
+/* end of styling text and box for community service page  */
+
+/* styling text and box for outdoor activities page  */
+.textbox3 {
+   	width: 675px;
+   	height: 358px;	
+   	background-color: var(--red); /* calling up my variable colors */
+   	float:right;
+    display: block;
+	margin-top:-4px; /* closes white space */   
+}
+
+.textbox3 p {
+	padding: 20px;
+	margin-top: -20px;
+    color: var(--white); /* calling up my variable colors */
+    font-family: "Montserrat";
+	font-size: 18px ;
+	text-align: centre;
+	line-height: 1.4;
+}
+
+/* Rangituhi walk video  */
+.video1{
+	float: left;
+	padding-left: 60px; /* adds white space and keeps the video off the side */
+	padding-top:15px;
+}
+
+.textbox4 {
+   	width: 675px;
+    height: 942px;	
+    background-color: var(--blue); /* calling up my variable colors */
+    float:left;
+	margin-top:20px;
+}
+
+.textbox4 p {
+   	margin: 15px;
+    color: var(--white); /* calling up my variable colors */
+    font-family: "Montserrat";
+	font-size: 18px ;
+	text-align: center;
+}
+/* end styling text and box for outdoor activities page  */
+
+/* Adrenalin Forest video  */
+.video2{
+	float: right;
+	padding-right: 50px;
+	padding-top:50px;
+}
+
+/* styling text and box for wainuiomata camp page  */
+.textbox5 {
+  	width: 675px;
+  	height: 680px;	
+  	background-color: var(--red);/* calling up my variable colors */
+  	float:left;
+	margin-top:-20px; /* closes the white space */	
+}
+
+.textbox5 p {
+   	margin-left: 15px;
+	margin-right:15px;
+    color: var(--white);/* calling up my variable colors */
+    font-family: "Montserrat";
+    font-size: 17px ;
+	text-align: centre;
+}
+
+.textbox6 {
+   	width: 675px;
+   	height: 636px;	
+   	background-color: var(--blue);/* calling up my variable colors */
+   	float:right;
+	margin-top: 6px;
+}
+
+.textbox6 p {
+	margin-left: 15px;
+	margin-right: 15px;
+   	color: var(--white);/* calling up my variable colors */
+    font-family: "Montserrat";
+	font-size: 17px ;
+	text-align: center;
+}
+/* end of styling text and box for wainuiomata page  */
+
+/* centering the forms */	
+.forms { 
+	padding-left:15px; 
+	padding-top:10px;
+}
+
+/*CSS for styling my Back to Top Button */
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;  /* z-index brings the element (button) to the front */
+	font-size: 50px;
+	border:  var(--black); /* Calling up my Variable Color to be used. */
+	outline: none;
+	background-color: var(--yellow); /* Calling up my Variable Color to be used. */
+	color: var(--white);
+	cursor: pointer;  /* Setting the icon to be used for my button on hover. */
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#myBtn:hover {
+	background-color: var(--red); /* hover colour for back to top button */
+}
+.footer {
+	grid-column-end: span 2;
+	background-color: var(--blue); /* calling up my variable colour */	
+    padding-top: 10px;
+	font-family: "Montserrat";
+	font-size: 18px;
+	color: var(--white); /* calling up my variable colour */	
+	text-align: center;
+}
+ /* end of css styling */	
