@@ -1,0 +1,354 @@
+/* CSS files add styling to your content */
+
+/* Import my google Fonts Third  part plug-in here. */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Sigmar&display=swap');
+
+body {
+	margin: 0;
+}
+
+:root {     /* my variable colors */
+	--black: #000000;
+	--white: #FFFFFF;
+	--blue: #1D3970;
+	--yellow:#F5B519;
+	--red:  #8D2225;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1200px 150px;
+    grid-template-rows: 180px 30px 1840px 50px;
+	height: 100vh;
+}
+
+.header {
+	box-sizing: border-box;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	background-size: cover;
+	width: 100%;
+	background-color: var(--red);
+	color: var(--white);
+	font-size: 15px;
+	font-family: "Merriweather Sans";
+    font-weight: 600;
+    font-style: normal;
+	text-decoration: none;
+}
+
+
+/* styling my navigation/menu */
+.nav{
+	background-color: var(--red);
+    grid-column-start: 1;
+    grid-column-end: span 2;
+	position: relative;
+}
+
+.nav ul{   /* styling text in nav*/
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+	font-size: 18px;
+	font-family: "Merriweather Sans";
+    font-weight: 600;
+    font-style: normal;
+	text-decoration: none;
+} 
+
+.nav li {
+	float: right;
+	padding-top:5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	
+} 
+
+.nav li a{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-decoration: none ;
+} 
+
+.nav li a:hover { background: var(--red);} /* this is the drop-down menu hover on blocks */
+/* Hover Colours*/
+.nav a:link{color: var(--white)} /* unvisited link */
+.nav a:visited{color: var(--white)} /* visited link */
+.nav a:hover{color: var(--yellow)} /* mouse over link */
+.nav a:active{color: var(--white)} /* selected link */
+
+ul li ul {
+	padding: 0px;
+	position: relative;
+	top: 3px ; /* space between each drop-down menu list */
+	left: ;
+	width: 205px; /* width of drop-down menu list */
+	height: 50px;
+	display: none;
+	visibility: hidden ; /* this hides the drop-down menu list */
+	z-index: 5; /* for overlapping divs, bringing to the front like  a drop-down menu */
+}
+	
+ul li ul li {
+	background: var(--red); /* this is the drop-down menu background colour */
+	display: block;
+	font-family: "Merriweather Sans";
+    font-weight: 600;
+    font-style: normal;
+	color: var(--white);
+	text-decoration: none ;
+	text-align: center;
+	
+}
+
+ul li ul li:hover { background: var(--red);} /* this is the drop-down menu hover on blocks */
+
+ul li:hover ul {
+	display: block;
+	visibility: visible; /* this makes the drop-down menu visible */
+	height:100px;
+}
+/* style for navigation ends here */
+
+.content {
+	box-sizing: border-box;
+	background-color: var(--white);
+	position: relative;
+	grid-column-start: 1;
+    grid-column-end: span 2;
+
+}
+
+h1 {
+   	font-weight: bold;
+    color: var(--white);
+	text-align: center;
+    font-family: "Merriweather Sans";
+	font-size: 35px ;
+	padding:10px;
+	
+}
+
+h2 {
+   	font-weight: bold;
+    color: var(--white);
+	margin: 10px;
+    font-family: "Merriweather Sans";
+	font-size: 35px ;
+	text-align: center;
+	
+}
+
+.transbox {
+   	width: 850px;
+    height: 250px;
+    float:left;
+    margin-left: 250px;
+	margin-top: 25px;
+    margin-bottom: 25px;
+	border-radius: 10px;
+	background-color: var(--white);
+}
+
+.transbox p {
+	border-radius: 10px;
+    margin: 5%;
+    font-weight: bold;
+    color: var(--black);
+    font-family: "Merriweather Sans";
+	font-size: 18px ;
+	text-align: center;
+}
+
+
+
+.transbox2 {
+   	width: 1000px;
+    height: 250px;
+    margin-left: 250px;
+	margin-top: 25px;
+    margin-bottom: 25px;
+	border-radius: 10px;
+	background-color: var(--white);
+	
+}
+
+.transbox2 p {
+   	border-radius: 10px;
+    margin: 5%;
+    font-weight: bold;
+    color: var(--black);
+    font-family: "Merriweather Sans";
+	font-size: 23px ;
+	text-align: center;
+}
+
+.banner {
+  width: 1350px;
+  height: 105px;
+  background-color: var(--blue);
+	
+	
+}
+
+.banner p {
+	border-radius: 10px;
+    margin: 5%;
+    font-weight: bold;
+    color: var(--white);
+    font-family: "Merriweather Sans";
+	font-size: 25px ;
+	text-align: center;
+}
+
+.textbox {
+   	width: 675px;
+    height: 743px;
+    background-color: var(--blue);
+    float:right;
+   
+}
+
+.textbox p {
+   	margin: 15px;
+	margin-top: -20px;
+    color: var(--white);
+    font-family: "Merriweather Sans";
+	font-size: 17.5px ;
+	text-align: centre;
+}
+
+.textbox2 {
+   	width: 675px;
+    height: 320px;	
+    background-color: var(--blue);
+    float:right;
+   
+}
+
+.textbox2 p {
+   	margin: 15px;
+	margin-top: -20px;
+	color: var(--white);
+    font-family: "Merriweather Sans";
+	font-size: 18px ;
+	text-align: centre;
+}
+
+.video1{
+	float: left;
+	padding-top: 25px;
+	padding-left: 50px;
+}
+
+
+
+.textbox3 {
+   	width: 675px;
+   	height: 700;	
+   	background-color: var(--red);
+   	float:right;
+    display: block;
+   
+}
+
+.textbox3 p {
+   	margin: 15px;
+	margin-top: -20px;
+    color: var(--white);
+    font-family: "Merriweather Sans";
+	font-size: 18px ;
+	text-align: centre;
+}
+
+
+
+.textbox4 {
+   	width: 675px;
+    height: 991px;	
+    background-color: var(--blue);
+    float:left;
+   
+}
+
+.textbox4 p {
+   	margin: 15px;
+    color: var(--white);
+    font-family: "Merriweather Sans";
+	font-size: 18px ;
+	text-align: centre;
+}
+
+.video2{
+	float: right;
+	padding-right: 50px;
+}
+
+.textbox5 {
+  width: 675px;
+  height: 750px;	
+  background-color: var(--red);
+  float:left;
+   
+}
+
+.textbox5 p {
+   	margin: 15px;
+    color: var(--white);
+    font-family: "Merriweather Sans";
+    font-size: 18px ;
+	text-align: centre;
+}
+
+.textbox6 {
+   	width: 675px;
+   	height: 500px;	
+   	background-color: var(--blue);
+   	float:right;
+   
+}
+
+.textbox6 p {
+   	margin: 15px;	
+   	color: var(--white);
+    font-family: "Merriweather Sans";
+	font-size: 18px ;
+	text-align: centre;
+}
+
+/*CSS for styling my Back to Top Button */
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;  /* z-index brings the element (button) to the front */
+	font-size: 50px;
+	border:  var(--black) ;
+	outline: none;
+	background color: var(--red); /* Calling up my Variable Color to be used. */
+	color: var (--white);
+	cursor: pointer;  /* Setting the icon to be used for my button on hover. */
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#myBtn:hover {
+	background-color: var(--yellow); /* hover colour for back to top button */
+}
+
+.footer {
+	grid-column-end: span 2;
+	background-color: var(--red);
+	padding-top: 10px;
+	font-family: "Merriweather Sans";
+	font-size: 18px;
+	color: var(--black);
+	text-align: center;
+}
